@@ -8,7 +8,7 @@ import Tesseract from 'tesseract.js';
 })
 export class ReceiptService {
 
-  private apiUrl = 'http://localhost:3000/api/auth';
+  private apiUrl = 'http://172.17.0.3:3000/api/auth';
 
   constructor(private http: HttpClient) { }
 

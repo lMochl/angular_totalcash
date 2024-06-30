@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:3000/api/auth';
+  private apiUrl = 'http://172.17.0.3:3000/api/auth';
   private tokenKey = 'token';
   private expirationKey = 'token_expiration';
 
