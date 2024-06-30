@@ -1,0 +1,38 @@
+<body>
+  <div class="container">
+    <div class="forms_reg">
+        <!-- Registration Form -->
+        <div class="form login">
+          <span class="title">Registro</span>
+  
+            <form (ngSubmit)="onRegister(registerForm)" #registerForm="ngForm">
+                <div class="input-field">
+                  <input type="text" id="username" name="username" class="form-control" placeholder="Ingresa tu nombre" [(ngModel)]="registerData.username" required>
+                    <i class="uil uil-user"></i>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Ingresa tu correo" [(ngModel)]="registerData.email" required email>
+                    <i class="uil uil-envelope icon"></i>
+                </div>
+                <div class="input-field">
+                  <input type="password" id="password" name="password" class="form-control" placeholder="Ingresa tu contraseña" [(ngModel)]="registerData.password" required>
+                  <i class="uil uil-lock icon"></i>
+                </div>
+                <div class="input-field">
+                  <input type="password" placeholder="Confirma tu contraseña" name="confirmPassword" class="form-control" [(ngModel)]="confirmPassword" required>
+                  <i class="uil uil-lock icon"></i>
+              </div>
+                <div class="input-field button">
+                    <input type="submit" value="Registrarte">
+                </div>
+            </form>
+            <div class="login-signup">
+                <span class="text">¿Ya tienes una cuenta?
+                    <a href="/login" class="text login-link">Iniciar sesión</a>
+                </span>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+

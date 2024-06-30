@@ -1,0 +1,28 @@
+<body>
+    <div class="container bodylogin">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Inicio de sesíon</span>
+                <form (ngSubmit)="onLogin(loginForm)" #loginForm="ngForm">
+                    <div class="input-field">
+                        <input type="email" id="email" name="email" class="form-control" [(ngModel)]="loginData.email" placeholder="Ingresa tu correo" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                      <input type="password" id="password" name="password" class="form-control" [(ngModel)]="loginData.password"  placeholder="Ingresa tu contraseña" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+      
+                    <div class="input-field button">
+                        <input type="submit" value="Iniciar sesión">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">¿No tienes una cuenta?
+                        <a href="/register" class="text signup-link">Registrate</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
